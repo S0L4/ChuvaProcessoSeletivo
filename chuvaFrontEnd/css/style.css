@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* AREA DO SIDE NAV */
+.sideNav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 220px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #ffffff;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+#sideNavTitle {
+    position: absolute;
+    width: 220px;
+    height: 68px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding-top: 7%;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#logo {
+    margin-top: 50px;
+}
+
+.sideNav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: #725C5C;
+    display: block;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sideNav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    font-size: 15px;
+    color: #725C5C;
+    display: block;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.25);
+    border-left: 5px solid orange;
+
+}
+
+.sideNav a:hover {
+    border-left: 5px solid orange;
+}
+
+/* AREA DO HEADER */
+.header {
+    display: flex;
+    width: 100%;
+    height: 68px;
+    background: #FDF1EB;
+}
+
+.headerArea {
+    margin-left: 15%;
+}
+
+#languageButton {
+    width: 97px;
+    height: 34px;
+    left: 789px;
+    top: 17px;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #333333;
+    margin-top: 16px;
+    margin-left: 20%;
+}
+
+.login {
+    
+}
+
+/* AREA DO MENU */
+.main {
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.titleArea {
+    display: flex;
+}
+
+#mainTitle {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #ED7839;
+}
+
+.mainButtons {
+    display: flexbox;
+}
+
+#dowloadButton {
+    
+}
+
+/* AREA DO FOOTER */
+.footer {
+    display: flex;
+    margin-left: 15%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
