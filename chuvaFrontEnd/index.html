@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
     <script src="https://kit.fontawesome.com/a259e13af9.js" crossorigin="anonymous"></script>
-    <title>Chuva Front-End</title>
+    <title>Chuva Front-End Processo Seletivo)</title>
 </head>
 
 <body>
@@ -33,7 +34,8 @@
             <p>ISSN: 1234-5678</p>
         </div>
 
-        <button id="languageButton"><i class="fas fa-globe" style="margin-right: 10px;"></i>PT.BR<i class="fas fa-angle-down" style="margin-left: 5px;"></i></button>
+        <button id="languageButton"><i class="fas fa-globe" style="margin-right: 10px;"></i>PT.BR<i
+                class="fas fa-angle-down" style="margin-left: 5px;"></i></button>
 
 
         <div class="login">
@@ -56,13 +58,16 @@
             </h3>
 
             <div class="mainButtons">
-                <button id="dowloadButton">Dowload </button>
-                <button id=""> </button>
-                <button id=""> </button>
+                <button id="dowloadButton"><i class="fas fa-download" style='color: white;
+                    margin-right: 10px;'></i>Dowload </button>
+                <button id="starButton"><i class="fas fa-star" style='color: white;
+                    font-size: 16px;'></i></button>
+                <button id="doiButton"><img src="img/doi-icon.png" width="16px" height="14px"></button>
             </div>
 
-            <p>Como citar esse trabalho?</p>
         </container>
+
+        <p id="trabP">COMO CITAR ESSE TRABALHO?</p>
 
         <container class="videoAndDetails">
             <div class="video">
@@ -71,14 +76,37 @@
                     Campinas/SP
                 </h3>
 
-                <p>Beatriz Christiane Melo</p>
-                <p>FCA / Universidade Estadual de Campinas</p>
 
+                <div class="subTitle">
+                    <i class="fas fa-smile" style='color: white;
+                        font-size: 70px;
+                        border: 1px solid #ED7839;
+                        border-radius: 50%;
+                        padding: 3px 3px;'>
+                    </i>
+                    <p style="font-size: 30px;"><b>Beatriz Christiane Melo</b><br>
+                        FCA / Universidade Estadual de Campinas</p>
+                </div>
 
+                <!-- <p>FCA / Universidade Estadual de Campinas</p> -->
             </div>
 
             <div class="details">
+                <h4>Detalhes</h4>
 
+                <div class="detailsText">
+                    <p>Tipo de Apresentação: <b>Pôster</b></p>
+                    <p>Eixo temático: <b>Alimentação e saúde (AS)</b></p>
+                    <p>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
+                    <p style="font-size: 14px; margin-top: 30px;"><b>Autores:</b><br>
+                        Galileo Galilei¹ <br>
+                        Berta Lange de Morretes² <br>
+                        Isaac Newton³ <br>
+                        Cesar Lattes¹ <br>
+                        Stephen Hawking⁴</p>
+                    <p style="font-size: 10px; margin-top: 30px;">¹Universidade Estadual de Campinas ²Universidade de
+                        São Paulo ³Instituto Nacional de Pesquisas Espaciais ⁴Universidade Federal do Rio de Janeiro</p>
+                </div>
             </div>
         </container>
 
@@ -86,13 +114,13 @@
             <h4>Resumo</h4>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut,
-                commodo turpis. Phasellus felis mauris, egestas eget <br>
+                commodo turpis. Phasellus felis mauris, egestas eget
                 cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl,
-                vel aliquet enim accumsan sit amet. Donec finibus <br>
+                vel aliquet enim accumsan sit amet. Donec finibus
                 nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et
-                non lorem. Sed id nisl metus. Quisque sollicitudin <br>
+                non lorem. Sed id nisl metus. Quisque sollicitudin
                 ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum
-                lobortis et non lorem. Sed id nisl metus. Quisque <br>
+                lobortis et non lorem. Sed id nisl metus. Quisque
                 sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel
                 aliquet enim accumsan sit ametl accumsant... ver mais
             </p>
@@ -101,7 +129,26 @@
         <div class="discutions">
             <h4>Discussões</h4>
 
-            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
+            <div class="topic">
+                <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
+
+                <content class="topicIcons">
+                    <img src="img/growth.png"></img>
+                    <img src="img/qa.png"></img>
+                    <i class="far fa-lightbulb" style="font-size: 24px;"></i>
+                </content>
+
+
+                <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+                    questionamentos ou sugestões para o autor!
+                </p>
+
+                <button><i class="fas fa-plus" style="font-size: 20px; 
+                    color: white;
+                    margin-right: 5px;"></i>criar tópico</button>
+            </div>
+
+            <!-- <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
             </p>
 
             <div class="topicCreation">
@@ -114,44 +161,71 @@
 
                 </P>
                 <button id="sendButton">Enviar</button>
+            </div> -->
+
+            <div class="questions">
+                <div class="question">
+                    <h6>Assunto da pergunta aparece aqui</h6>
+                    <h7>Carlos Henrique Santos</h7>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
+                        impacto de processo formativo situado impacto de processo formativo processo...
+                    </p>
+
+                    <div class="comentReview">
+                        <button><i class="fas fa-ellipsis-v" style='color: #ED7839;
+                            font-size: 20px;'></i></button>
+                        <button><i class='fas fa-heart' style='font-size:12px; 
+                            color: white; 
+                            background-color: #ED7839;
+                            border-radius: 3px 3px 3px 3px;
+                            padding: 5px 8px;
+                            margin-left: 10px;
+                            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);'>
+                            </i></button>
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h6>Assunto da pergunta aparece aqui</h6>
+                    <h7>Carlos Henrique Santos</h7>
+
+                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
+                        impacto de processo formativo situado impacto de processo formativo processo...
+                    </p>
+
+                    <div class="comentReview">
+                        <button><i class="fas fa-ellipsis-v" style='color: #ED7839;
+                            font-size: 20px;'></i></button>
+                        <button><i class='fas fa-heart' style='font-size:12px; 
+                            color: white; 
+                            background-color: #ED7839;
+                            border-radius: 3px 3px 3px 3px;
+                            padding: 5px 8px;
+                            margin-left: 10px;
+                            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);'>
+                            </i></button>
+                        <p>1 like</p>
+                        <p>1 resposta</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="questions">
-            <div class="question">
-                <h6>Assunto da pergunta aparece aqui</h6>
-                <h7>Carlos Henrique Santos</h7>
-
-                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
-                    impacto de processo formativo situado impacto <br>
-                    de processo formativo processo...
-                </p>
-
-                <div class="comentReview">
-                    <p>1 like</p>
-                    <p>1 resposta</p>
-                </div>
-            </div>
-
-            <div class="question">
-                <h6>Assunto da pergunta aparece aqui</h6>
-                <h7>Carlos Henrique Santos</h7>
-
-                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e
-                    impacto de processo formativo situado impacto <br>
-                    de processo formativo processo...
-                </p>
-
-                <div class="comentReview">
-                    <p>1 like</p>
-                    <p>1 resposta</p>
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
-        <img src="img/footer.png" width="1300px">
+        <img src="img/galoa.png" width="300px">
+        <div class="footerText">
+            <p><b>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</b> gerado em eventos é a
+                razão de ser da <br>
+                plataforma Galoá Proceedings.</p>
+            <p>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica,
+                mantendo acesso o <br>
+                debate científico fomentado pelos encontros e aumentado o impacto do evento.</p>
+        </div>
     </footer>
 </body>
 

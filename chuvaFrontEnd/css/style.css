@@ -125,28 +125,31 @@
 
 .login p {
     font-family: 'Quicksand';
-    font-size: 12px;  
+    font-size: 12px;
     color: #333333;
 }
 
 #loginP1 {
     font-family: 'Quicksand';
-    font-size: 14px;  
+    font-size: 14px;
     color: #333333;
 }
 
 /* AREA DO MENU */
 
 .main {
-    margin-left: 15%;
+    margin-left: 17%;
+    margin-right: 4%;
     margin-top: 20px;
 }
 
 .titleArea {
     display: flex;
+    justify-content: space-between;
 }
 
 #mainTitle {
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 20px;
     line-height: 25px;
@@ -154,17 +157,227 @@
     color: #ED7839;
 }
 
-.mainButtons {
-    display: flexbox;
+#dowloadButton {
+    border: none;
+    background-color: #ED7839;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px 20px;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
 }
 
-#dowloadButton {}
+#starButton {
+    border: none;
+    background-color: #ED7839;
+    border-radius: 3px 3px 3px 3px;
+    padding: 6px 10px;
+    margin-left: 3px;
+}
+
+#doiButton {
+    border: none;
+    background-color: #ED7839;
+    border-radius: 3px 3px 3px 3px;
+    padding: 6px 10px;
+    margin-left: 3px;
+}
+
+#trabP {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #ED7839;
+    text-align: right;
+}
+
+.videoAndDetails {
+    display: flex;
+}
+
+.video {
+    width: 80%;
+    height: 440px;
+    background-image: url("../img/beach.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: inset 2000px 0 0 0 rgba(141, 53, 6, 0.315);
+    margin-right: 50px;
+}
+
+.subTitle {
+    margin-top: 170px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.video p {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+    color: white;
+}
+
+#videoTitle {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: white;
+}
+
+.details {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    width: 20%;
+    border: 1px solid #ECECEC;
+    height: 440px;
+}
+
+.detailsText {
+    padding: 5px 5px;
+}
+
+.resume {
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+h4 {
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    padding: 7px 15px 7px;
+}
+
+.resume p {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 15px 7px;
+    letter-spacing: 1px;
+    color: #5C5C5C;
+}
+
+/* AREA DO TOPICO */
+
+.discutions {
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+.topic {
+    text-align: center;
+}
+
+.topic p {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: #595959;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.topicIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.topic img {
+    margin-right: 30px;
+}
+
+.topic button {
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 15px;
+    border: none;   
+    padding: 3px 10px 3px 10px;
+}
+
+.question {
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10px 15px 10px;
+    margin: 10px 13px 10px;
+}
+
+h6 {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 16px;
+    color: #ED7839;
+}
+
+h7 {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 12px;
+    color: #5C5C5C;
+}
+
+.question p {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 14px;
+    color: #4D4D4D;
+    margin-top: 10px;
+}
+
+.comentReview {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.comentReview p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.comentReview button {
+    border: none;
+}
 
 /* AREA DO FOOTER */
 
 .footer {
     display: flex;
     margin-left: 15%;
+    margin-top: 2%;
+}
+
+.footerText {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 14px;
+    color: #4D4D4D;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
