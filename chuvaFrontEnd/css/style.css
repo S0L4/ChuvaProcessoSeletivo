@@ -268,10 +268,23 @@ h4 {
 .resume p {
     font-family: 'Quicksand';
     font-size: 14px;
-    font-weight: 400;
+    font-weight: normal;
     padding: 7px 15px 7px;
     letter-spacing: 1px;
     color: #5C5C5C;
+}
+
+#completeText {
+    display: none;
+}
+
+#seeMoreButton {
+    border: none;
+    font-family: 'Quicksand';
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #ED7839;
 }
 
 /* AREA DO TOPICO */
@@ -285,6 +298,16 @@ h4 {
 
 .topic {
     text-align: center;
+}
+
+.topicArea {
+    text-align: left;
+    display: none;
+}
+
+.topicCreation {
+    padding: 10px 15px 10px;
+    margin: 10px 13px 10px;
 }
 
 .topic p {
@@ -311,10 +334,74 @@ h4 {
     border-radius: 4px;
     color: white;
     font-family: 'Quicksand';
-    font-weight: bold;
+    font-weight: 700;
     font-size: 15px;
-    border: none;   
+    border: none;
     padding: 3px 10px 3px 10px;
+}
+
+.topicArea p {
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: #595959;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.topicCreation p {
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 10px 15px 10px;
+}
+
+.sendButtonArea {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #EAF1F2;
+}
+
+#sendButton {
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    padding: 5px 40px 5px 40px;
+}
+
+.buttonIcons {
+    padding: 6px 15px 4px;
+}
+
+.sendedTopic {
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: #595959;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#sendedTopic button {
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 40px 5px 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
 }
 
 .question {
@@ -323,6 +410,13 @@ h4 {
     border-radius: 3px;
     padding: 10px 15px 10px;
     margin: 10px 13px 10px;
+}
+
+h5 {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    color: #ED7839;
 }
 
 h6 {
@@ -367,7 +461,7 @@ h7 {
 
 .footer {
     display: flex;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 2%;
 }
 
