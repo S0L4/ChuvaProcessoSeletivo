@@ -24,7 +24,7 @@
         <a href="#">Comitês</a>
         <a href="#">Autores</a>
         <a href="#">Eixos temáticos</a>
-        <p>Trabalhos</p>
+        <a href="#">Trabalhos</a>
         <a href="#">Contato</a>
     </div>
 
@@ -35,20 +35,23 @@
             <p>ISSN: 1234-5678</p>
         </div>
 
-        <button id="languageButton"><i class="fas fa-globe" style="margin-right: 10px;"></i>PT.BR<i
+        <button id="languageButton"><i class="fas fa-globe" style="margin-right: 5px;"></i>PT.BR<i
                 class="fas fa-angle-down" style="margin-left: 5px;"></i></button>
 
+        <div class="loginUser">
+            <div class="login">
+                <p id="loginP1">Bem vindo!</p>
+                <p>useraleatorio@email.com.br</p>
+            </div>
 
-        <div class="login">
-            <p id="loginP1">Bem vindo!</p>
-            <p>useraleatorio@email.com.br</p>
-        </div>
-
-        <i class="fas fa-user-circle" style='font-size:48px; 
-                    margin-top: 10px; 
+            <div class="loginImg">
+                <i class="fas fa-user-circle" style='font-size:48px; 
+                    margin-top: 23px; 
                     margin-left: 30px;
                     margin-right: 20px;'>
-        </i>
+                </i>
+            </div>
+        </div>
     </header>
 
     <main class="main">
@@ -77,19 +80,20 @@
                     Campinas/SP
                 </h3>
 
-
                 <div class="subTitle">
-                    <i class="fas fa-smile" style='color: white;
+                    <div class="userVideo">
+                        <i class="fas fa-smile" style='color: white;
                         font-size: 70px;
                         border: 1px solid #ED7839;
                         border-radius: 50%;
                         padding: 3px 3px;'>
-                    </i>
-                    <p style="font-size: 30px;"><b>Beatriz Christiane Melo</b><br>
+                        </i>
+                    </div>
+
+                    <p id="userName"><b>Beatriz Christiane Melo</b><br>
                         FCA / Universidade Estadual de Campinas</p>
                 </div>
 
-                <!-- <p>FCA / Universidade Estadual de Campinas</p> -->
             </div>
 
             <div class="details">
@@ -210,13 +214,16 @@
             <div id="sendedTopic" class="sendedTopic">
                 <h5>Seu tópico foi enviado com sucesso! :D</h5>
 
-                <p style="margin-bottom: 20px; margin-top: 20px;">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
+                <p style="margin-bottom: 20px; margin-top: 20px;">Agradecemos por sua contribuição, uma notificação será
+                    enviada ao seu email assim que seu tópico for
                     respondio!</p>
 
                 <p style="text-decoration-line: underline;
                 color: #F48F44;">Descubras outros trabalhos!</p>
 
-                <button onclick="criacaoNovoTopico()" id="createNewTopic">criar novo tópico</button>
+                <div class="newTopic">
+                    <button onclick="criacaoNovoTopico()" id="createNewTopic">criar novo tópico</button>
+                </div>
 
                 <div class="confirmedTopic">
                     <i class="fas fa-check-double" style="font-size: 24px; margin-bottom: 20px;"></i>
