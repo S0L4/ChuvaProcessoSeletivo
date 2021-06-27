@@ -10,11 +10,12 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
     <script src="https://kit.fontawesome.com/a259e13af9.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts.js"></script>
-    <title>Chuva Front-End Processo Seletivo)</title>
+    <title>Chuva Front-End Processo Seletivo</title>
 </head>
 
 <body>
 
+    <!-- NAVEGADOR LATERAL -->
     <div class="sideNav">
         <h1 id="sideNavTitle">Slaca 2019</h1>
 
@@ -24,19 +25,20 @@
         <a href="#">Comitês</a>
         <a href="#">Autores</a>
         <a href="#">Eixos temáticos</a>
-        <a href="#">Trabalhos</a>
+        <a href="#" class="active">Trabalhos</a>
         <a href="#">Contato</a>
     </div>
 
+    <!-- CABECALHO DA PAGINA -->
     <header class="header">
         <div class="headerArea">
             <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
             <h2 class="headerTitle">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h2>
             <p>ISSN: 1234-5678</p>
         </div>
-
+        
         <button id="languageButton"><i class="fas fa-globe" style="margin-right: 5px;"></i>PT.BR<i
-                class="fas fa-angle-down" style="margin-left: 5px;"></i></button>
+            class="fas fa-angle-down" style="margin-left: 5px;"></i></button>
 
         <div class="loginUser">
             <div class="login">
@@ -54,6 +56,7 @@
         </div>
     </header>
 
+    <!-- AREA PRINCIPAL -->
     <main class="main">
         <container class="titleArea">
             <h3 id="mainTitle">Análise sensorial de preparações funcionais desenvolvidas para escolares <br>
@@ -73,7 +76,10 @@
 
         <p id="trabP">COMO CITAR ESSE TRABALHO?</p>
 
+        <!-- area do video e detalhes -->
         <container class="videoAndDetails">
+
+            <!-- video -->
             <div class="video">
                 <h3 id="videoTitle">Análise sensorial de preparações funcionais desenvolvidas <br>
                     para escolares entre 09 e 15 anos, do município de <br>
@@ -96,6 +102,7 @@
 
             </div>
 
+            <!-- detalhes -->
             <div class="details">
                 <h4>Detalhes</h4>
 
@@ -115,6 +122,7 @@
             </div>
         </container>
 
+        <!-- area do resumo -->
         <div class="resume">
             <h4>Resumo</h4>
 
@@ -168,9 +176,11 @@
 
         </div>
 
+        <!-- area das discussoes -->
         <div class="discutions">
             <h4>Discussões</h4>
 
+            <!-- area do topico -->
             <div id="topic" class="topic">
                 <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
 
@@ -190,16 +200,17 @@
                     margin-right: 5px;"></i>criar tópico</button>
             </div>
 
+            <!-- area de criacao do topico -->
             <div id="topicArea" class="topicArea">
                 <p style="text-align: center;">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
                 </p>
 
                 <div class="topicCreation">
                     <h5>Assunto</h5>
-                    <p>Defina um tópico sucinto para notificar os autores...</p>
+                    <input placeholder="Defina um tópico sucinto para notificar os autores..."></input>
 
                     <h5>Conteúdo</h5>
-                    <P>Conteúdo do tópico...</P>
+                    <textarea cols="30" rows="6"></textarea>
 
                     <div class="sendButtonArea">
                         <div class="buttonIcons">
@@ -211,6 +222,7 @@
                 </div>
             </div>
 
+            <!-- area do topico enviado -->
             <div id="sendedTopic" class="sendedTopic">
                 <h5>Seu tópico foi enviado com sucesso! :D</h5>
 
@@ -233,6 +245,7 @@
                 </div>
             </div>
 
+            <!-- area das questoes -->
             <div class="questions">
                 <div class="question">
                     <h6>Assunto da pergunta aparece aqui</h6>
@@ -254,7 +267,7 @@
                             box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);'>
                             </i></button>
                         <p>1 like</p>
-                        <p>1 resposta</p>
+                        <button id="response">1 resposta</button>
                     </div>
                 </div>
 
@@ -277,8 +290,75 @@
                             margin-left: 10px;
                             box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);'>
                             </i></button>
-                        <p>1 like</p>
-                        <p>1 resposta</p>
+                        <p>4 likes</p>
+                        <button id="response" onclick="comentarioPergunta()">4 respostas</button>
+                    </div>
+                </div>
+
+                <!-- area dos comentarios sobre a questao -->
+                <div id="questionComents" class="questionComents">
+                    <div class="coment">
+                        <div class="comentTitle">
+                            <h9>Adriano da Silva</h9>
+
+                            <div class="comentSpecs">
+                                <h8>Autor</h8>
+                                <i class="fas fa-check-double"
+                                    style="font-size: 16px; margin-bottom: 20px; color: #ED7839;"></i>
+                            </div>
+                        </div>
+
+                        <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de
+                            processo formativo situado impacto de processo formativo processo resente relato inscreve-se
+                            no campo da análise da dimensão e impacto de processo formativo situado impacto de processo
+                            formativo processo.</p>
+                    </div>
+
+                    <div class="coment">
+                        <div class="comentTitle">
+                            <h9 style="margin-bottom: 15px;">Carlos Henrique Santos</h9>
+                        </div>
+
+                        <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de
+                            processo formativo situado impacto de processo formativo.
+
+                            Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                    </div>
+
+                    <div class="coment">
+                        <div class="comentTitle">
+                            <h9>Carmila Ferreira Andrade</h9>
+
+                            <div class="comentSpecs">
+                                <h8>Coautor</h8>
+                                <i class="fas fa-check-double"
+                                    style="font-size: 16px; margin-bottom: 20px; color: #ED7839;"></i>
+                            </div>
+                        </div>
+                        <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e
+                            impacto de processo formativo situado impacto de processo formativo processo resente relato
+                            inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto
+                            de processo formativo processo.
+
+                            Situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                            análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                            processo.</p>
+                    </div>
+
+                    <div class="coment">
+                        <div class="comentTitle">
+                            <h9>Ana Carolina</h9>
+
+                            <div class="comentSpecs">
+                                <h8>Coautor</h8>
+                                <i class="fas fa-check-double"
+                                    style="font-size: 16px; margin-bottom: 20px; color: #ED7839;"></i>
+                            </div>
+                        </div>
+                        <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de
+                            processo formativo situado impacto de processo formativo processo resente relato inscreve-se
+                            no campo da análise da dimensão e impacto de processo formativo situado impacto de processo
+                            formativo processo.</p>
                     </div>
                 </div>
             </div>
@@ -286,6 +366,7 @@
 
     </main>
 
+    <!-- RODA PE -->
     <footer class="footer">
         <img src="img/galoa.png" width="300px">
         <div class="footerText">

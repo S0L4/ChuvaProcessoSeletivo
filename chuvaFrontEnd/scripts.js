@@ -1,3 +1,4 @@
+// FUNCAO PARA VER MAIS DO TEXTO RESUMIDO      
 function verMais() {
     var resumeText = document.getElementById("resumeText");
     var completeText = document.getElementById("completeText");
@@ -14,38 +15,49 @@ function verMais() {
     }
 }
 
+// FUNCAO PARA IR PARA A AREA DE CRIACAO DE UM NOVO TOPICO
 function criacaoTopico() {
-    var topicInitialArea = document.getElementById("topic");
-    var topicCreationArea = document.getElementById("topicArea");
+    topicInitialArea = document.getElementById("topic");
+    topicCreationArea = document.getElementById("topicArea");
+    topicSendedArea = document.getElementById("sendedTopic");
 
     if (topicCreationArea.style.display === "none") {
-        topicCreationArea.style.display = "inline"
+        topicCreationArea.style.display = "inline";
         topicInitialArea.style.display = "none";
     } else {
-        topicCreationArea.style.display = "none"
+        topicCreationArea.style.display = "none";
     }
 }
 
+// FUNCAO PARA IR PARA A AREA DE TOPICO ENVIADO
 function enviarTopico() {
-    var topicCreationArea = document.getElementById("topicArea");
-    var topicSendedArea = document.getElementById("sendedTopic");
 
     if (topicSendedArea.style.display === "none") {
-        topicSendedArea.style.display = "inline"
+        topicSendedArea.style.display = "inline";
         topicCreationArea.style.display = "none";
     } else {
-        topicSendedArea.style.display = "none"
+        topicSendedArea.style.display = "none";
     }
 }
 
+// FUNCAO PARA RETORNAR A AREA DE CRIACAO DE TOPICO
 function criacaoNovoTopico() {
-    var topicCreationArea = document.getElementById("topicArea");
-    var topicSendedArea = document.getElementById("sendedTopic");
 
     if (topicSendedArea.style.display === "inline") {
-        topicSendedArea.style.display = "none"
+        topicSendedArea.style.display = "none";
         topicCreationArea.style.display = "inline";
     } else {
-        topicSendedArea.style.display = "inline"
+        topicSendedArea.style.display = "inline";
+    }
+}
+
+// FUNCAO PARA MOSTRAR OS COMENTARIOS DAS PERGUNTAS
+function comentarioPergunta() {
+    var questionComents = document.getElementById("questionComents");
+
+    if (questionComents.style.display === "none") {
+        questionComents.style.display = "inline";
+    } else {
+        questionComents.style.display = "none"
     }
 }
